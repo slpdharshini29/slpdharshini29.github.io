@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Lora:wght@500&family=Merriweather:ital,wght@1,300&family=Playfair+Display:wght@600&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,6 +10,7 @@
 }
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 a:link:not(#exclude),
@@ -34,10 +36,13 @@ body > div {
 #landing {
   display: flex;
   position: relative;
+  justify-content: space-between;
+  padding-inline: 2rem;
   width: 100%;
   height: 80dvh;
   background-image: url("/assets/bg.jpg");
   overflow: hidden;
+  font-family: "Lora", serif;
 }
 .navbar {
   min-width: 10rem;
@@ -62,7 +67,7 @@ body > div {
   rotate: -30deg;
   width: 10%;
   scale: 0.7;
-  margin-left: 3rem;
+  margin-right: 20rem;
 }
 .collage > div {
   display: flex;
@@ -94,19 +99,23 @@ body > div {
   overflow-wrap: break-word;
   word-wrap: break-word;
   display: inline-block;
-  max-width: 70%;
+  max-width: 100%;
   white-space: pre-line;
   margin-bottom: 5rem;
+  font-family: "Playfair Display", serif;
 }
 .welcomeContainer .welcomeText {
   padding-block: 2rem;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: justify;
-  /* font-weight: ; */
+  margin-bottom: 5rem;
 }
-
+a {
+  width: fit-content;
+  height: fit-content;
+}
 #books {
   display: flex;
   height: 100dvh;
@@ -174,8 +183,7 @@ body > div {
 .category p {
   position: relative;
   top: 3rem;
-  font-family: Helvetica, sans-serif;
-  font-weight: 300;
+  font-family: "Merriweather", serif;
 }
 .action .category:nth-child(2) {
   bottom: 6rem;
@@ -239,6 +247,7 @@ body > div {
   text-align: center;
   /* box-shadow: 5px 2px 5px 1px rgba(0, 0, 0, 0.2); */
   font-size: 3rem;
+  font-family: "Merriweather", serif;
 }
 .booksWrapper {
   position: relative;
@@ -259,10 +268,10 @@ body > div {
 }
 .booksWrapper::-webkit-scrollbar-thumb {
   border-radius: 1px;
-  background-color: #aef4f6;
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
 }
 .booksWrapper::-webkit-scrollbar-thumb:hover {
-  background-color: #98dfe2;
+  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
 }
 
 .bookContainer {
@@ -304,21 +313,22 @@ body > div {
   height: 40%;
   padding: 0.5em 2em;
   text-align: center;
-  font-family: "helvetica", sans-serif;
 }
 .detailsContainer .title {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
+  font-family: "Cabin", sans-serif;
 }
 .detailsContainer .description {
   font-weight: 300;
   max-height: 3.5rem;
   overflow: auto;
+  font-family: "Merriweather", serif;
 }
 
-.info {
+.BookCount {
   border-top: 2px solid #000;
   padding: 2rem;
 }

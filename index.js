@@ -13,8 +13,7 @@ var search = "";
 var nextItem = 0;
 var current = [];
 var loadMore = function () {
-  console.log(filter);
-  console.log(search);
+
   current = books.slice(nextItem, nextItem + 10);
   if (filter) {
     current = books.filter(function (item) {
