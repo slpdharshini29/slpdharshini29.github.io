@@ -110,16 +110,11 @@ body > div {
   border-bottom: 1px solid #000;
   font-size: 1.2rem;
   text-align: justify;
-<<<<<<< HEAD
   margin-bottom: 5rem;
 }
 a {
   width: fit-content;
   height: fit-content;
-=======
-  font-family: 'Lora', serif;
-  /* font-weight: ; */
->>>>>>> 599715bf6901176cf74dce143cf82aee464f0184
 }
 #books {
   display: flex;
