@@ -1,4 +1,4 @@
-import books from './data/books.json' assert { type: "json" };;
+import books from './assets/books.json' assert { type: "json" };
 
 const container = document.getElementById('data-container');
 

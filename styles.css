@@ -43,7 +43,6 @@ body > div {
   min-width: 10rem;
   max-width: 10rem;
   height: 100%;
-  border-right: 2px solid #000;
 }
 .navbar p {
   writing-mode: vertical-rl;
@@ -117,7 +116,6 @@ body > div {
   min-width: 10rem;
   max-width: 10rem;
   height: 100%;
-  border-right: 2px solid #000;
 }
 
 .actions {
@@ -135,13 +133,28 @@ body > div {
   width: 4rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  background: #f1f8f8;
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
   margin-block: 3rem;
-  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
 
   z-index: 2;
   cursor: pointer;
 }
+.action:hover {
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(205, 205, 205, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+}
+
 .action .category {
   position: absolute;
   display: flex;
@@ -156,7 +169,7 @@ body > div {
   z-index: 1;
   bottom: 6rem;
   transition: all 0.5s ease-in-out;
-  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .category p {
   position: relative;
@@ -221,9 +234,10 @@ body > div {
   flex-direction: column;
 }
 .booksContainer .header {
-  padding: 0.5em;
+  padding: 0.5em 0.5em;
+  padding-top: 1.2em;
   text-align: center;
-  border-bottom: 2px solid #000;
+  /* box-shadow: 5px 2px 5px 1px rgba(0, 0, 0, 0.2); */
   font-size: 3rem;
 }
 .booksWrapper {
@@ -259,7 +273,7 @@ body > div {
   margin-top: 7rem;
   width: 15rem;
   height: 17rem;
-  border: 2px solid #000;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
 
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -272,7 +286,7 @@ body > div {
   overflow: hidden;
   left: -10px;
   top: -10px;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .coverContainer {
